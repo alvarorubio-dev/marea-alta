@@ -2,6 +2,7 @@ import { JsonLd } from '@/components/ui'
 import { Hero } from '@/components/sections/hero'
 import { Menu } from '@/components/sections/menu'
 import { About } from '@/components/sections/about'
+import { Reservation } from '@/components/sections/reservation'
 import { siteConfig } from '@/config/site'
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
       <Hero />
       <Menu />
       <About />
+      <Reservation />
     </>
   )
 }
