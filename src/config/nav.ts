@@ -5,12 +5,13 @@ export type NavItem = {
 }
 
 export const mainNav: NavItem[] = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Inicio', href: '#inicio' },
+  { label: 'Menú', href: '#menu' },
+  { label: 'Nosotros', href: '#nosotros' },
+  { label: 'Reservas', href: '#reservas' },
 ]
 
 export const footerNav: NavItem[] = [
-  { label: 'Privacy', href: '/privacy' },
-  { label: 'Terms', href: '/terms' },
+  { label: 'Aviso legal', href: '/aviso-legal' },
+  { label: 'Privacidad', href: '/privacidad' },
 ]

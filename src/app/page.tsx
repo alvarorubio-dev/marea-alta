@@ -1,35 +1,35 @@
-import { JsonLd, Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui'
-import { ContactForm } from '@/components/forms'
+import { JsonLd } from '@/components/ui'
+import { Hero } from '@/components/sections/hero'
 import { siteConfig } from '@/config/site'
 
 export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: siteConfig.name,
+    '@type': 'Restaurant',
+    name: siteConfig.business.name,
+    legalName: siteConfig.business.legalName,
     description: siteConfig.description,
     url: siteConfig.url,
-    author: {
-      '@type': 'Person',
-      name: siteConfig.author.name,
-      url: siteConfig.author.url,
+    telephone: siteConfig.business.phone,
+    email: siteConfig.business.email,
+    priceRange: siteConfig.business.priceRange,
+    servesCuisine: siteConfig.business.cuisine,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: siteConfig.business.address.street,
+      addressLocality: siteConfig.business.address.city,
+      addressRegion: siteConfig.business.address.region,
+      postalCode: siteConfig.business.address.postalCode,
+      addressCountry: siteConfig.business.address.country,
     },
+    openingHours: siteConfig.business.hours,
+    sameAs: [siteConfig.business.social.instagram, siteConfig.business.social.facebook],
   }
 
   return (
     <>
       <JsonLd data={jsonLd} />
-      <main className="flex min-h-screen flex-col items-center justify-center gap-8 p-8">
-        <Card className="w-full max-w-md">
-          <CardHeader>
-            <CardTitle>Contacto</CardTitle>
-            <CardDescription>Rellena el formulario y te responderemos pronto.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ContactForm />
-          </CardContent>
-        </Card>
-      </main>
+      <Hero />
     </>
   )
 }
