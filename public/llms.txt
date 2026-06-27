@@ -1,0 +1,33 @@
+# Next.js Professional Starter
+
+> Production-ready Next.js starter for agencies, freelancers and companies.
+
+## Stack
+
+- Next.js 16 with App Router
+- React 19
+- TypeScript 5
+- Tailwind CSS 4
+- React Hook Form + Zod
+
+## Structure
+
+- /src/app — App Router pages and layouts
+- /src/components/ui — Reusable UI components (Button, Card, Input, Textarea)
+- /src/components/layout — Header, Footer
+- /src/components/forms — ContactForm
+- /src/config — Site config and navigation
+- /src/lib — Utilities (cn, validations)
+- /src/types — TypeScript types
+
+## Features
+
+- SEO: metadata, sitemap, robots.txt, Open Graph, JSON-LD
+- Forms: validation with Zod, React Hook Form
+- CI/CD: GitHub Actions with lint, typecheck and build
+- Deployment: Vercel
+
+## Source
+
+- GitHub: https://github.com/alvarorubio-dev/nextjs-professional-starter
+- Live: https://nextjs-professional-starter.vercel.app
