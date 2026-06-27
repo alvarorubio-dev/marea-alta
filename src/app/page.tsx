@@ -1,6 +1,7 @@
 import { JsonLd } from '@/components/ui'
 import { Hero } from '@/components/sections/hero'
 import { Menu } from '@/components/sections/menu'
+import { About } from '@/components/sections/about'
 import { siteConfig } from '@/config/site'
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
       <JsonLd data={jsonLd} />
       <Hero />
       <Menu />
+      <About />
     </>
   )
 }
