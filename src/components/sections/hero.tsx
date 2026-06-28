@@ -37,9 +37,7 @@ export function Hero() {
             Reservar mesa
           </Button>
           <Button
-            size="lg"
-            variant="outline"
-            className="border-white/30 text-white hover:bg-white/10"
+            className="border-2 border-[#c9a84c] text-[#c9a84c] transition-all duration-300 hover:bg-[#c9a84c] hover:text-white"
             onClick={() => document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Ver menú
